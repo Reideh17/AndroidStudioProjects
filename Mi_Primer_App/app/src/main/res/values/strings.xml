@@ -2,7 +2,7 @@
     <string name="app_name">MiseApp</string>
     <string name="hedier">Hedier</string>
     <string name="title_activity_menu_principal">Menu_principal</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Inicio</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Notificaciones</string>
 </resources>
