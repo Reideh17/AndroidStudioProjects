@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Reto_uno">
         <activity
+            android:name=".productos"
+            android:exported="false" />
+        <activity
+            android:name=".ajustes"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
