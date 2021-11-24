@@ -1,0 +1,11 @@
+<resources>
+    <!-- -->
+    <string name="app_name">MiseApp</string>
+
+    <!--Inicio del texto para opciones de menu-->
+    <string name="ajustes">Ajustes</string>
+    <string name="productos">Productos</string>
+    <string name="servicios">Servicios</string>
+    <string name="sucursales">Sucursales</string>
+    <!--Fin del texto para opciones de menu-->
+</resources>
