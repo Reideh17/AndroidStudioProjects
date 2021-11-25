@@ -29,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.option1:
-                Toast.makeText(getApplicationContext(), "option 1 selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Ajustes", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(MainActivity.this, ajustes.class);
                 startActivity(intent1);
-                finish();
+                //finish();
                 return true;
             case R.id.option2:
-                Toast.makeText(getApplicationContext(), "option 2 selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(MainActivity.this, productos.class);
                 startActivity(intent2);
-                finish();
+                //finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
