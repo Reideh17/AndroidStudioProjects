@@ -11,5 +11,7 @@
     <string name="agregar_producto">Agregar producto</string>
     <string name="codigo">Codigo</string>
     <string name="detalles">Detalles</string>
+    <string name="stock">Stock</string>
+    <string name="agregar">Agregar</string>
     <!--Fin del texto para opciones de menu-->
 </resources>

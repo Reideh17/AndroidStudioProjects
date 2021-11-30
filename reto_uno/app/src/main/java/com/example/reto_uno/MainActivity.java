@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void productos(View view){
         Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(MainActivity.this,productos.class);
+        Intent intent = new Intent(MainActivity.this,productos2.class);
         startActivity(intent);
         //finish();
     }
@@ -60,17 +60,17 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.option2:
                 Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(MainActivity.this, productos.class);
+                Intent intent2 = new Intent(MainActivity.this, productos2.class);
                 startActivity(intent2);                //finish();
                 return true;
             case R.id.option3:
                 Toast.makeText(getApplicationContext(), "Servicios", Toast.LENGTH_SHORT).show();
-                Intent intent3 = new Intent(MainActivity.this, productos.class);
+                Intent intent3 = new Intent(MainActivity.this, servicios.class);
                 startActivity(intent3);                //finish();
                 return true;
             case R.id.option4:
                 Toast.makeText(getApplicationContext(), "Sucursales", Toast.LENGTH_SHORT).show();
-                Intent intent4 = new Intent(MainActivity.this, productos.class);
+                Intent intent4 = new Intent(MainActivity.this, sucursales.class);
                 startActivity(intent4);                //finish();
                 return true;
             default:
