@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.icon_principal);
+        getSupportActionBar().setIcon(R.mipmap.icon_barra);
 
         setContentView(R.layout.activity_main);
+
     }
 
     @Override
@@ -31,19 +32,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void productos(View view){
-        Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), " Opcion de Productos", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this,productos2.class);
         startActivity(intent);
         //finish();
     }
     public void servicios(View view){
-        Toast.makeText(getApplicationContext(), "Servicios", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Opcion de Servicios", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this,servicios.class);
         startActivity(intent);
         //finish();
     }
     public void sucursales(View view){
-        Toast.makeText(getApplicationContext(), "Sucursales", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Opcion de Sucursales", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this,sucursales.class);
         startActivity(intent);
         //finish();
@@ -58,22 +59,22 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.option1:
-                Toast.makeText(getApplicationContext(), "Ajustes", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Opcion de Ajustes", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(MainActivity.this, ajustes.class);
                 startActivity(intent1);               //finish();
                 return true;
             case R.id.option2:
-                Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Opcion de  Productos", Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(MainActivity.this, productos2.class);
                 startActivity(intent2);                //finish();
                 return true;
             case R.id.option3:
-                Toast.makeText(getApplicationContext(), "Servicios", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Opcion de  Servicios", Toast.LENGTH_SHORT).show();
                 Intent intent3 = new Intent(MainActivity.this, servicios.class);
                 startActivity(intent3);                //finish();
                 return true;
             case R.id.option4:
-                Toast.makeText(getApplicationContext(), "Sucursales", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Opcion de Sucursales", Toast.LENGTH_SHORT).show();
                 Intent intent4 = new Intent(MainActivity.this, sucursales.class);
                 startActivity(intent4);                //finish();
                 return true;
