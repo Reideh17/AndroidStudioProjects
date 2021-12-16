@@ -20,10 +20,7 @@ public class productos2 extends AppCompatActivity {
     }
     public void agregar(View view){
         int cod_producto = Integer.parseInt(codigo.getText().toString());
-
         resultado.setText("Se agrego un producto de manera correcta.\n Codigo :"+cod_producto);
-
-
-
     }
+
 }

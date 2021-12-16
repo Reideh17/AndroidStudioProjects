@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+/* git de mis proyectos https://github.com/Reideh17/AndroidStudioProjects*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

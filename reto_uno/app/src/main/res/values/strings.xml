@@ -13,5 +13,9 @@
     <string name="detalles">Detalles</string>
     <string name="stock">Stock</string>
     <string name="agregar">Agregar</string>
+    <string name="sucursal_centro">Sucursal centro</string>
+    <string name="calle_8_12_c_14_estero">Calle 8 # 12 c 14 estero</string>
+    <string name="horarios">de 8.00 am - 08:00 pm</string>
+    <string name="horarios_de_lun_vie">Horarios de Lun - Vie</string>
     <!--Fin del texto para opciones de menu-->
 </resources>

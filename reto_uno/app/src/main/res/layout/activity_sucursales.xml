@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".sucursales">
 
     <LinearLayout
@@ -11,12 +12,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
+
         <ImageView
-            android:id="@+id/imgProductos"
+            android:id="@+id/imgsucursal"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/cell" />
+            app:srcCompat="@drawable/sucursales" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,32 +31,76 @@
                 android:id="@+id/tvProName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/sucursal_centro" />
 
             <TextView
                 android:id="@+id/tvProDesciption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/calle_8_12_c_14_estero" />
 
             <TextView
-                android:id="@+id/tvProPrice"
+                android:id="@+id/tvhorario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
-            <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:text="@string/horarios_de_lun_vie" />
+
+            <TextView
+                android:id="@+id/tvhorarios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="" />
-            <Button
-                android:id="@+id/btnProductos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Productos" />
+                android:text="@string/horarios" />
+
         </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgServicios"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_titulo_estero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sucursal Estero" />
+
+            <TextView
+                android:id="@+id/tv_dir_sucursal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle 57 A # 58 - 23 Barzal" />
+
+            <TextView
+                android:id="@+id/tv_horario_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horarios_de_lun_vie" />
+
+            <TextView
+                android:id="@+id/tv_horario_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horarios" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 
 </LinearLayout>
