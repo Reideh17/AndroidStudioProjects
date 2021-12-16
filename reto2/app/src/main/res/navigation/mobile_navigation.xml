@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.reto2.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_productos"
+        android:name="com.example.reto2.ui.productos.ProductosFragment"
+        android:label="@string/menu_prodcutos"
+        tools:layout="@layout/fragment_productos" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.reto2.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_servicios"
+        android:name="com.example.reto2.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_servicios" />
+    <fragment
+        android:id="@+id/nav_sucursales"
+        android:name="com.example.reto2.ui.sucursales.SucursalesFragment"
+        android:label="@string/menu_sucursales"
+        tools:layout="@layout/fragment_sucursales" />
+    <fragment
+        android:id="@+id/ajustesFragment"
+        android:name="com.example.reto2.ui.ajustes.AjustesFragment"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" />
 </navigation>

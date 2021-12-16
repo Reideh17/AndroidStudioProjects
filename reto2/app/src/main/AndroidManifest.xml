@@ -4,16 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_principal"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_principal_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reto2">
         <activity
+            android:name=".Form_add_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Reto2.NoActionBar">
+            android:theme="@style/Theme.Reto2.NoActionBar" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
