@@ -2,13 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_agregar"
+        android:id="@+id/action_favoritos"
         android:orderInCategory="100"
-        android:title="@string/menu_agregar"
-        app:showAsAction="never" />
+        android:title=""
+        android:icon="@drawable/icon_favorite_24"
+        app:showAsAction="always" />
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_compartir"
         android:orderInCategory="100"
-        android:title="@string/menu_ajsutes"
-        app:showAsAction="never" />
+        android:icon="@drawable/icon_share"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_mas_vertical"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_agregar"
+                android:orderInCategory="100"
+                android:title="@string/menu_agregar"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_settings"
+                android:orderInCategory="100"
+                android:title="@string/menu_ajsutes"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+
 </menu>
