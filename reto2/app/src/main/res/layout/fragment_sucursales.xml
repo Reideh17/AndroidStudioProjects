@@ -41,19 +41,20 @@
                         android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="La chiqui" />
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="CALLE 40 # 12 45 Valmoral"
+                        android:textAlignment="center" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/horarios_de_lun_vie" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -84,19 +85,19 @@
                         android:id="@+id/textView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Super ventas" />
 
                     <TextView
                         android:id="@+id/textView33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Calle 52 - 96 Norte" />
 
                     <TextView
                         android:id="@+id/textView43"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/horarios" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -127,19 +128,19 @@
                         android:id="@+id/textView24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Unicentro" />
 
                     <TextView
                         android:id="@+id/textView34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Local 422 Tercer piso" />
 
                     <TextView
                         android:id="@+id/textView44"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/horarios" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -170,19 +171,20 @@
                         android:id="@+id/textView25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Panorama" />
 
                     <TextView
                         android:id="@+id/textView35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Barrio el Estero frente al coco"
+                        android:textAlignment="center" />
 
                     <TextView
                         android:id="@+id/textView45"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/horarios" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -213,19 +215,19 @@
                         android:id="@+id/textView26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Milenio" />
 
                     <TextView
                         android:id="@+id/textView36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Calle 74 - 12 -17 Ricaute" />
 
                     <TextView
                         android:id="@+id/textView46"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/horarios" />
                 </LinearLayout>
             </LinearLayout>
 

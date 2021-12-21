@@ -20,6 +20,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.reto2.Form_add_Activity;
 import com.example.reto2.R;
 import com.example.reto2.databinding.FragmentProductosBinding;
+import com.example.reto2.ui.ajustes.AjustesFragment;
 
 public class ProductosFragment extends Fragment {
 
@@ -60,6 +61,12 @@ public class ProductosFragment extends Fragment {
                 Intent intent = new Intent(getContext(), Form_add_Activity.class);
                 intent.putExtra("name","Productos");
                 getActivity().startActivity(intent);
+                //Toast.makeText(getContext(),"Agregar",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_settings:
+                Intent intent2 = new Intent(getContext(), AjustesFragment.class);
+                intent2.putExtra("name","Productos");
+                getActivity().startActivity(intent2);
                 //Toast.makeText(getContext(),"Agregar",Toast.LENGTH_SHORT).show();
                 return true;
             default:
