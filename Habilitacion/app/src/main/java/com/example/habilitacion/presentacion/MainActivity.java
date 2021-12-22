@@ -33,20 +33,7 @@ public class MainActivity extends AppCompatActivity {
         gridView = (GridView) findViewById(R.id.gridProductos);
         productos = new ArrayList<>();
 
-        Cursor cursor = dbHelper.getProductos();
-        if(cursor.getCount() != 0){
-            while (cursor.moveToNext()){
-                Producto producto = new Producto(
-                        cursor.getInt(0),
-                        cursor.getString(1),
-                        cursor.getString(2),
-                        cursor.getBlob(3)
-                );
-                productos.add(producto);
-            }
-        }
-        ProductoAdapter productoAdapter = new ProductoAdapter(getApplicationContext(), productos);
-        gridView.setAdapter(productoAdapter);
+
     }
 
     @Override
