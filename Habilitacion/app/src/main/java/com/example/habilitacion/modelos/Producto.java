@@ -6,19 +6,20 @@ public class Producto {
     private String titulo;
     private String descripcion;
 
+
+    public Producto(int id,  String titulo, String descripcion, byte[] image) {
+        this.id = id;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.image = image;
+    }
+
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Producto(int id, byte[] image, String titulo, String descripcion) {
-        this.id = id;
-        this.image = image;
-        this.titulo = titulo;
-        this.descripcion = descripcion;
     }
 
     public byte[] getImage() {

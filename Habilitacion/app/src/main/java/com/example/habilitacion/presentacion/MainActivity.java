@@ -20,6 +20,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*  REPOSITORIO DE PROYECTOS DE HEDIER ALVAREZ OVALLE ES  : https://github.com/Reideh17/AndroidStudioProjects*/
+
     private GridView gridView;
     private DBHelper dbHelper;
     private ArrayList<Producto> productos;
@@ -33,6 +35,23 @@ public class MainActivity extends AppCompatActivity {
         gridView = (GridView) findViewById(R.id.gridProductos);
         productos = new ArrayList<>();
 
+        /* datos del cursos asignado para productos*/
+        Cursor cursor = dbHelper.getProductos();
+
+        if(cursor.getCount() != 0){
+            while(cursor.moveToNext()){
+                Producto producto = new Producto(
+                        cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getBlob(3)
+                );
+                productos.add(producto);
+            }
+
+        }
+        ProductoAdapter productoAdapter = new ProductoAdapter(getApplicationContext(),productos);
+        gridView.setAdapter(productoAdapter);
 
     }
 
@@ -48,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.opt_agregar:
                 Intent intent = new Intent(this, form_prodcutos.class);
                 startActivity(intent);
+                return true;
+            case R.id.opt_ajsutes:
+                Intent intent2 = new Intent(this, ajustes.class);
+                startActivity(intent2);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.habilitacion.R;
+import com.example.habilitacion.modelos.Producto;
 import com.example.habilitacion.presentacion.show_productos;
 
 import java.util.ArrayList;
@@ -71,7 +72,7 @@ public class ProductoAdapter extends BaseAdapter {
                     intent.putExtra("id", producto.getId());
                     intent.putExtra("title", producto.getTitulo());
                     intent.putExtra("description", producto.getDescripcion());
-                    intent.putExtra("image", producto.getImage());
+                    //intent.putExtra("image", producto.getImage());
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                 }catch (Exception e){

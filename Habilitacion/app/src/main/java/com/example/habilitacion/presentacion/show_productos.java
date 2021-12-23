@@ -19,7 +19,7 @@ public class show_productos extends AppCompatActivity {
     private byte[] image;
 
     private ImageView imgProduct;
-    private TextView tvTitle, tvDescription, tvId;
+    private TextView tvTitulo, tvDescription, tvId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,12 @@ public class show_productos extends AppCompatActivity {
             description = intent.getStringExtra("description");
             image = intent.getByteArrayExtra("image");
 
-            tvTitle = (TextView) findViewById(R.id.titleP);
+            tvTitulo = (TextView) findViewById(R.id.titleP);
             tvDescription = (TextView) findViewById(R.id.descriptionP);
-            tvId = (TextView) findViewById(R.id.idP);
+            tvId = (TextView) findViewById(R.id.idProducto);
             imgProduct = (ImageView) findViewById(R.id.imageP);
 
-            tvTitle.setText(title);
+            tvTitulo.setText(title);
             tvDescription.setText(description);
             Bitmap bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
             imgProduct.setImageBitmap(bitmap);

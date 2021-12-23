@@ -2,5 +2,8 @@
     <string name="app_name">Habilitacion</string>
     <string name="menu_agregar">Agregar</string>
     <string name="menu_ajustes">Ajustes</string>
+    <string name="btn_ver">Ver</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_insertar">Insertar</string>
 
 </resources>

@@ -77,7 +77,7 @@ public class form_prodcutos extends AppCompatActivity {
                         image
                 );
                 limpiarCampos();
-                Toast.makeText(getApplicationContext(), "Producto Creado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Producto Guardado", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -96,7 +96,7 @@ public class form_prodcutos extends AppCompatActivity {
                 intent.setType("image/*");
                 startActivityForResult(intent, REQUEST_CODE_GALLERY);
             }else{
-                Toast.makeText(getApplicationContext(), "No tienes Permisos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "No tienes Permisos a galeria", Toast.LENGTH_SHORT).show();
             }
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
