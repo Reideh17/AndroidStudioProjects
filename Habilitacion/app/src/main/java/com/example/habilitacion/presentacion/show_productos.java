@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.habilitacion.R;
 
 public class show_productos extends AppCompatActivity {
-    private int id = 0;
+    private int idProducto = 0;
     private String title = "";
     private String description = "";
     private byte[] image;
@@ -28,7 +28,7 @@ public class show_productos extends AppCompatActivity {
 
         try{
             Intent intent = getIntent();
-            id = intent.getIntExtra("id",0);
+            idProducto = intent.getIntExtra("id",0);
             title = intent.getStringExtra("title");
             description = intent.getStringExtra("description");
             image = intent.getByteArrayExtra("image");
@@ -42,7 +42,7 @@ public class show_productos extends AppCompatActivity {
             tvDescription.setText(description);
             Bitmap bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
             imgProduct.setImageBitmap(bitmap);
-            tvId.setText("ID: "+id);
+            tvId.setText("ID: "+idProducto);
         }catch (Exception e){
             Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
         }

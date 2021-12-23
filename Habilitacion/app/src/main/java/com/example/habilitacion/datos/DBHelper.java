@@ -19,10 +19,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE productos (" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
-                "title VARCHAR,"+
-                "description VARCHAR,"+
+        db.execSQL("CREATE TABLE PRODUCTOS(" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "title VARCHAR," +
+                "description VARCHAR," +
                 "image BLOB" +
                 ")");
         db.execSQL("CREATE TABLE servicios (" +
@@ -51,7 +51,7 @@ public class DBHelper extends SQLiteOpenHelper {
     /* procesos del aplicacion */
 
     public void insertProductos(String title, String description, byte[] image){
-        String sql = "INSERT INTO PRODUCTOS VALUES(null, ?, ?, ?)";
+        String sql = "INSERT INTO PRODUCTOS VALUES(0, ?, ?, ?)";
         SQLiteStatement statement = sqLiteDatabase.compileStatement(sql);
         statement.clearBindings();
 
